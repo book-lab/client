@@ -1,8 +1,8 @@
 "use strict";
 
 var app = app || {};
-// const API_URL = 'https://kcbooksdb.herokuapp.com';
-const API_URL = 'http://localhost:3000';
+//const API_URL = 'https://kcbooksdb.herokuapp.com';
+const API_URL = 'http://localhost:3000/api/v1';
 
 (function(module) {
     function Book (obj) {
@@ -24,11 +24,11 @@ const API_URL = 'http://localhost:3000';
 
     Book.find = (cb, data) => {
         //$.get(`${API_URL}/api/v1/search`) 
-        const search = $('#searchTerm').val()
-        console.log('this is search term in book.find ----', search)
-        const searchItem = {
-            term: search
-        }
+       // const search = $('#searchTerm').val()
+       // console.log('this is search term in book.find ----', search)
+       // const searchItem = {
+        //    term: search
+        //}
 
         $.get(`${API_URL}/api/v1/search`, searchItem)
             .then(data => {
