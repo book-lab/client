@@ -5,7 +5,7 @@ var app = app || {};
     const bookView = {};
 
     bookView.initIndexPage = (ctx) => {
-        // $('#main-body').hide();
+        $('#main-body').hide();
         $('#bookList').empty().show();
         $('#about').hide();
         $('.button').hide();
@@ -14,7 +14,7 @@ var app = app || {};
         app.Book.all.map(book => $('#bookList').append(book.toHtml()));  
 
         $('#search').on('click', function () {
-             // page(`/search?search=${searchTerm}`);
+            page(`/search?search=${searchTerm}`);
             app.Book.find(bookView.initIndexPage);
 
         });
@@ -31,7 +31,7 @@ var app = app || {};
             $("#bookList").hide();
             $("#newBook").parent().hide();
             $("#updateForm").parent().show();
-            // page(`/books/${ctx.book.book_id}/update`)
+            page(`/books/${ctx.book.book_id}/update`)
     
             $('#updateForm input[name="title"]').val(book.title);
             $('#updateForm input[name="author"]').val(book.author);

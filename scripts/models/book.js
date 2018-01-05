@@ -23,7 +23,7 @@ const API_URL = 'http://localhost:3000';
     }
 
     Book.find = (cb, data) => {
-        //should be /api/vq/search   changed to nasa for testing api 
+        //should be /api/v1/search 
         const search = $('#searchTerm').val()
         console.log('this is search term in book.find ----', search)
         const searchItem = {
@@ -53,8 +53,6 @@ const API_URL = 'http://localhost:3000';
     }
 
     Book.update = (book_id, data) => {
-        // console.log('this is in book.update ', book_id );
-        // console.log( 'data', data );
         $.ajax({
             url: `${API_URL}/api/v1/books/${book_id}`,
             method: 'PUT',
