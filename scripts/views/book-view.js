@@ -14,7 +14,7 @@ var app = app || {};
         app.Book.all.map(book => $('#bookList').append(book.toHtml()));  
 
         $('#search').on('click', function () {
-            page(`/search?search=${searchTerm}`);
+            //page(`/search?search=${searchTerm}`);
             app.Book.find(bookView.initIndexPage);
 
         });

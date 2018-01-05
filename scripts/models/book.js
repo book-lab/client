@@ -23,7 +23,7 @@ const API_URL = 'http://localhost:3000';
     }
 
     Book.find = (cb, data) => {
-        //should be /api/v1/search 
+        //$.get(`${API_URL}/api/v1/search`) 
         const search = $('#searchTerm').val()
         console.log('this is search term in book.find ----', search)
         const searchItem = {
