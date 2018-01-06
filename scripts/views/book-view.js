@@ -16,7 +16,7 @@ var app = app || {};
         $('#search').on('click', function () {
             const searchTerm = $ ('input[name="search"]').val()
             console.log=(searchTerm);
-            //page(`/search?search=${searchTerm}`);
+            page(`/search?search=${searchTerm}`);
             app.Book.find(bookView.initIndexPage);
 
         });

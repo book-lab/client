@@ -2,7 +2,7 @@
 
 var app = app || {};
 //const API_URL = 'https://kcbooksdb.herokuapp.com';
-const API_URL = 'http://localhost:3000/api/v1';
+const API_URL = 'http://localhost:3000';
 
 (function(module) {
     function Book (obj) {
@@ -23,12 +23,12 @@ const API_URL = 'http://localhost:3000/api/v1';
     }
 
     Book.find = (cb, data) => {
-        //$.get(`${API_URL}/api/v1/search`) 
-       // const search = $('#searchTerm').val()
-       // console.log('this is search term in book.find ----', search)
-       // const searchItem = {
-        //    term: search
-        //}
+        $.get(`${API_URL}/api/v1/search`) 
+        const search = $('#searchTerm').val()
+        console.log('this is search term in book.find ----', search)
+        const searchItem = {
+            term: search
+        }
 
         $.get(`${API_URL}/api/v1/search`, searchItem)
             .then(data => {
@@ -74,7 +74,7 @@ const API_URL = 'http://localhost:3000/api/v1';
     }
 
     Book.fetchOne = (ctx, cb) => {
-        $.get(`${API_URL}/api/v1/book/${ctx.params.id}`)
+        $.get(`${API_URL}/api/v1/books/${ctx.params.id}`)
             .then(data => {
                 console.log(data);
                 ctx.book = new Book(data[0]);
