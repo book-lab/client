@@ -1,47 +1,82 @@
-#mainbody {     
+.mainBody {     
     width:auto;
+    background-color: rgb(57, 6, 151);
 } 
- 
+
+.buttons {
+    padding-left: 30%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    color:black;
+    text-align:center;
+    justify-content: space-around;
+}
+
+h2 {
+     font-size: 24px;
+     color:black;
+     text-align: center;
+}
+
+#nav {
+    background-color:teal;
+    width: 95%;
+    padding: 1%;
+}
+
 #books {
     font-family:sans serif;
     color:black;
-    background-color: forestgreen;
+    background-color: teal;
+
 }
     
 #about {
     font-family: sans serif;
     color:black;
-    background-color:forestgreen;
+    background-color:teal;
     font-size: 25px;
 }
 
 #new {
     font-family:sans serif;
     color:black;
-    background-color: forestgreen;
+    background-color: teal;
 }
 
-#info{
-
-    font-size: 16pt;
+#searchBlock {
+    background-color:teal;
 
 }
 
 #search {
-    display:block;
     font-size: 14pt;
     color:black;
-    background-color:forestgreen;
-
+    background-color:teal;
+    font-size: 24px;
+    float:right;
+    padding-right: 10%;
+    margin-top: 6px;
+    border: 2px solid black;
+    border-radius: 4px;     
 }
+
 #searchTerm {
-    width: auto;
+    width: 90%;
+    margin-top: 10px;
+    height: 26px;
     background-color: white;
     color:black;
 }
+
 #bookParagraph {
     font-family: sans serif;
-    font-size: 14pt;
+    font-size: 16pt;
     color:black;
-    background-color:forestgreen;
+    background-color:teal;
+    width: auto;
+    display: flex;
 }

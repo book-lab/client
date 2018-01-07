@@ -1,11 +1,18 @@
 
+#book-lab {
+    font-size: 16px;
+    color:black;
+}
+
+
+
 #newBook {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     background-color: teal;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #updateForm {
@@ -14,7 +21,7 @@
     margin: 8px 0;
     box-sizing: border-box;
     background-color:teal;
-    font-size: 20px;
+    font-size: 24px;
 
 }
 
