@@ -1,0 +1,38 @@
+
+#info {
+    font-size: 16px;
+    color:black;
+    background-color:teal;
+    text-align: left;
+
+}
+
+#pages {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    width: 100%;
+
+}
+
+#update {
+    width: auto;
+    padding:3%;
+    font-size: 20px;
+    background-color: teal;    
+}
+
+#delete {
+    width: auto;
+    padding:3%;
+    font-size: 20px;
+    background-color:teal;
+     
+}
+
+#submit{
+    font-size: 26px;
+    float:right;
+    padding-right: 10%;
+     
+}

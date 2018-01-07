@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script id = "book-template" type="text/x-handlebars-template">
-        
-        
-        <div>
-            <h1><a href="/client/books/{{book_id}}">{{title}}</a></h1>
-            <h2>{{author}}</h2>
-            <h3>{{isbn}}</h3>
-            <img src = '{{image_url}}'>
-            <p>{{{description}}}</p>
-            <button class ='button' data-method="update">UPDATE</button>
-            <button class ='button' data-method="delete">DELETE</button>
+    <link rel="stylesheet" href="scripts/styles/vendor/normalize.css">
+    <link rel="stylesheet" href="scripts/styles/base.css">
+    <link rel="stylesheet" href="scripts/styles/layout.css">
+    <link rel="stylesheet" href="scripts/styles/module.css">
+    <link rel="stylesheet" href="scripts/styles/state.css">
+    <link rel="stylesheet" href="scripts/styles/theme.css">
+    <script id = "book-template" type="text/x-handlebars-template"></script>
+    
+    
+    <title>Book Lab</title>
+       
+        <!-- <div class="info"> -->
+            <!-- <h1><a href="/client/books/{{book_id}}">{{title}}</a></h1> -->
+            <!-- <h2>{{author}}</h2> -->
+            <!-- <h3>{{isbn}}</h3> -->
+            <!-- <img src = '{{image_url}}'> -->
+            <!-- <p>{{{description}}}</p> -->
+            <button id ='update' data-method="update">UPDATE</button>
+            <button id ='delete' data-method="delete">DELETE</button>
         </div>
-    </script>
 </head>
 
 <body>
 
-    <nav>
+    <nav id="pages">
         <ul>
             <li><a href = "/client/" id = "books">Books</a></li>
             <li><a href = "/client/about" id = "about">About</a></li>
@@ -34,47 +40,43 @@
 
        
         <fieldset>
-            <label for="search">Search</label>
             <input id= "searchTerm" type = "text" name = "search" required>
             <button id="search">SEARCH</button>
         </fieldset>
         
-        <div id = "bookList"></div>
-        <div id = "searchList"></div>
-
         <fieldset>
             <form id = "newBook">
-                <label for="title" >Title:</label>
+                <label id ="bookForm" >Title:</label>
                 <input type = "text" name = "title" required>
-                <label for ="author">Author:</label>
+                <label id ="bookForm">Author:</label>
                 <input type = "text" name = "author" required>
-                <label for ="isbn">ISBN:</label>
+                <label id ="bookForm">ISBN:</label>
                 <input type = "text" name = "isbn" required>
-                <label for ="Image_url">Image_url:</label>
+                <label id ="bookForm">Image_url:</label>
                 <input type = "text" name = "image_url" required>
-                <label for ="description">Description:</label>
+                <label id ="bookForm">Description:</label>
                 <input type = "text" name = "description" required>
-                <button type = "submit">SUBMIT</button>
+                <button id = "submit">SUBMIT</button>
             </form>
         </fieldset>
 
         <fieldset>
             <form id = "updateForm">
-                <label for="title" >Title:</label>
+                <label id="bookForm" >Title:</label>
                 <input type = "text" name = "title" required>
-                <label for ="author">Author:</label>
+                <label id ="bookForm">Author:</label>
                 <input type = "text" name = "author" required>
-                <label for ="isbn">ISBN:</label>
+                <label id ="bookForm">ISBN:</label>
                 <input type = "text" name = "isbn" required>
-                <label for ="Image_url">Image_url:</label>
+                <label id ="bookForm">Image_url:</label>
                 <input type = "text" name = "image_url" required>
-                <label for ="description">Description:</label>
+                <label id ="bookForm">Description:</label>
                 <input type = "text" name = "description" required>
-                <button type = "submit">SUBMIT</button>
+                <button id = "submit">SUBMIT</button>
             </form>
         </fieldset>
 
-        <section id = "about">
+        <section id = "bookParagraph">
             Charlie ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit mi at eros auctor, vel pellentesque risus luctus. Nam in sem ac diam lobortis egestas. Nulla nec magna maximus, lobortis orci in, cursus arcu. Donec arcu nibh, sollicitudin at lectus et, fermentum vehicula nunc. Integer dictum lacinia dignissim. Donec eu pellentesque arcu, a ultrices turpis. Praesent at nisi nec augue pellentesque tristique a eget magna. Quisque lacinia nisi ac viverra cursus. Proin urna quam, accumsan eget felis vitae, convallis imperdiet leo. Quisque sit amet tortor scelerisque, pharetra dolor sit amet, volutpat purus. Duis laoreet velit sit amet lacinia elementum. Vivamus lacinia turpis a orci rhoncus, ut gravida ex fermentum.
         </section>
     </main>

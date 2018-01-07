@@ -1,0 +1,47 @@
+#mainbody {     
+    width:auto;
+} 
+ 
+#books {
+    font-family:sans serif;
+    color:black;
+    background-color: forestgreen;
+}
+    
+#about {
+    font-family: sans serif;
+    color:black;
+    background-color:forestgreen;
+    font-size: 25px;
+}
+
+#new {
+    font-family:sans serif;
+    color:black;
+    background-color: forestgreen;
+}
+
+#info{
+
+    font-size: 16pt;
+
+}
+
+#search {
+    display:block;
+    font-size: 14pt;
+    color:black;
+    background-color:forestgreen;
+
+}
+#searchTerm {
+    width: auto;
+    background-color: white;
+    color:black;
+}
+#bookParagraph {
+    font-family: sans serif;
+    font-size: 14pt;
+    color:black;
+    background-color:forestgreen;
+}
